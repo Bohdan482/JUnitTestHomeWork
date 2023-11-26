@@ -1,4 +1,5 @@
-import org.example.SumCalculator;
+package org.example;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -25,10 +26,7 @@ class SumCalculatorTest {
 
     @Test
     void sumWhenNumberIsZero(){
-        Assertions.assertThrows(IllegalArgumentException.class, () -> sumCalculator.sum(0));
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> sumCalculator.sum(0));
     }
-
-
-
-
 }
